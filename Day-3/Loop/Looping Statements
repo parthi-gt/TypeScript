@@ -1,0 +1,127 @@
+/*
+
+3 Things to Know About Looping Statements in TypeScript
+
+1.Starting Point: Looping statements are used to execute a block of code repeatedly based on a condition. They help in reducing code redundancy and improving efficiency.
+2.How much value want to increment or decrement: Looping statements allow you to control the number of iterations by specifying how much to increment or decrement the loop variable.
+3.Where to stop: Looping statements provide mechanisms to exit the loop based on certain conditions, such as using break or continue statements.
+
+Looping statements in TypeScript allow executing a block of code multiple times based on a condition. Below are the corrected syntax and examples for each loop.
+1. while Loop
+The while loop executes a block of code as long as the condition is true.
+
+Syntax:
+while (condition) 
+{
+// Code to execute
+}
+
+Example:
+let i: number = 1;
+while (i <= 5) {
+console.log(i);
+i++;
+}
+Output:
+1
+2
+3
+4
+5
+The loop checks the condition before execution. If i <= 5, it runs; otherwise, it stops.
+
+
+2. do-while Loop
+The do-while loop executes the code at least once before checking the condition.
+
+Syntax:
+do 
+{
+// Code to execute
+} while (condition);
+
+Example:
+let j: number = 1;
+do {
+console.log(j);
+j++;
+} while (j <= 5);
+Output:
+1
+2
+3
+4
+5
+Executes once even if the condition is false.
+
+3. for Loop
+The for loop is useful when the number of iterations is known.
+Syntax:
+for (initialization; condition; increment/decrement) {
+// Code to execute
+}
+
+Example:
+for (let k: number = 1; k <= 5; k++) {
+console.log(k);
+Output:
+1
+2
+3
+4
+5
+Includes initialization, condition check, and increment/decrement in a single line.
+
+4. break Statement
+The break statement stops the loop immediately when a condition is met.
+Syntax:
+for (initialization; condition; increment/decrement) {
+if (someCondition) {
+break;
+}
+// Code to execute
+}
+Example:
+for (let n: number = 1; n <= 10; n++) 
+{
+if (n === 5) 
+{
+break; 
+// Exits the loop when n is 5
+}
+console.log(n);
+}
+Output:
+1
+2
+3
+4
+The loop exits when n reaches 5.
+
+5. continue Statement
+The continue statement skips the current iteration and moves to the next one.
+Syntax:
+for (initialization; condition; increment/decrement) 
+{
+if (someCondition) 
+{
+continue;
+}
+// Code to execute
+}
+
+Example:
+for (let m: number = 1; m <= 5; m++) {
+if (m === 3) {
+continue; // Skips when m is 3
+}
+console.log(m);
+}
+Output:
+1
+2
+4
+5
+Skips 3 and continues with the next iteration.
+
+*/
